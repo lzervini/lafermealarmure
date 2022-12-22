@@ -8,9 +8,16 @@
 </head>
 <body>
 <?php get_header(); ?>
+ <?php
+ 	if ( have_posts() ) :
+ 		while ( have_posts() ) : the_post();
 
-    <h1>Le template à tout faire s'il n'en existe pas d'autres</h1>
+ 			the_title( '<h1>', '</h1>' );
+ 			the_content();
 
+ 		endwhile;
+ 	endif;
+ ?>
 <?php get_footer(); ?>
 </body>
 </html>
