@@ -1,0 +1,16 @@
+.title{
+    @include title();
+    &.-big{
+        color:$marronClair;
+        font-size: 30px;
+    }
+    &.-medium{
+        color:$beige;
+        font-size: 24px;
+    }
+    &.-tiny{
+        color:$orange;
+        font-size: 20px;
+    }
+
+}

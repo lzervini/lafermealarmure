@@ -12,10 +12,10 @@ button{
     left: 20px;
     top: 20px;
 
-    background: #A68470;
+    background: $beige;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     &:hover{
-
+        background: $marronClair;
     }
 }

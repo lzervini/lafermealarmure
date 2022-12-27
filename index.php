@@ -12,8 +12,7 @@
  	if ( have_posts() ) :
  		while ( have_posts() ) : the_post();
 
- 			the_title( '<h1>', '</h1>' );
- 			the_content();
+		 echo '<h3>' . get_post_type() . '</h3>';			get_template_part( 'template-parts/content', get_post_type() );
 
  		endwhile;
  	endif;

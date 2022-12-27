@@ -4,8 +4,8 @@
  	if ( have_posts() ) :
  		while ( have_posts() ) : the_post();
 
- 			the_title( '<h1>', '</h1>' );
- 			the_content();
+ 			the_title( '<h1 class="title -big">', '</h1>' );
+ 			the_content('');
 
  		endwhile;
  	endif;
