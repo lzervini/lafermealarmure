@@ -15,6 +15,7 @@ Version: 1.0
 @import "elements/button";
 @import "elements/title";
 @import "elements/text";
+@import "elements/contact-form";
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
@@ -43,6 +44,7 @@ Version: 1.0
    */
   body {
     margin: 0;
+    background-color: $mainBackgroundColor;
   }
   
   /**
