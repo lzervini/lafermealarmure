@@ -34,5 +34,14 @@
       'flex-width'  => true,
       'flex-height' => true,
     ) );
+
   }
- ?>
+
+  function laferme_menus() {
+    register_nav_menus( array(
+      'main-menu' => esc_html__( 'En-tête de page', 'lafermealarmure' ),
+      'footer-menu' => esc_html__( 'Pied de page', 'lafermealarmure' )
+    ) );
+  }
+
+  ?>

@@ -46,6 +46,14 @@ h3 {
   width: 509px;
 }
 
+.menu__list {
+  list-style: none;
+  padding: 0;
+}
+.menu__list :visited {
+  color: red;
+}
+
 html {
   font-family: "Comfortaa", cursive;
 }

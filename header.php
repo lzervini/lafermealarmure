@@ -27,21 +27,17 @@
 	      <?php endif; ?>
 	</div>
 	<div class="header__end">
-	
-	<button class="header__menuBtn menuBurger" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-		  <span class="menuBurger__bar" aria-hidden="true"></span>
-	  </button>
-
   
 	<!-- Début du menu-->
 	<nav class="header__menu menu" id="mainNav" aria-label="Menu principal">
-	  <ul class="menu__list">
-		<li class="menu__item"><a class="menu__link" href="/lafermealarmure/accueil.html">Accueil</a></li>
-		<li class="menu__item"><a class="menu__link" href="/lafermealarmure/chambres.html">Les chambres</a></li>
-		<li class="menu__item"><a class="menu__link" href="/lafermealarmure/la-region.html">La région</a></li>
-		<li class="menu__item"><a class="menu__link" href="/lafermealarmure/contact.html">Contact & Accès</a></li>
-		<li class="menu__item -btn"><a class="menu__link" href="/lafermealarmure/reserver.html">Réserver</a></li>
-	  </ul>
+ <?php
+	  wp_nav_menu( array(
+     'theme_location' => 'main-menu',
+     'container'      => false,
+     'menu_class'     => 'menu__list',
+     'depth'          => 1
+   ) );
+ ?>
 	</nav>
 	<!-- Fin du menu-->
   
