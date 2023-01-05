@@ -1,7 +1,12 @@
 .menu__list{
     list-style: none;
     padding: 0;
+    color: $marronClair;
     :visited{
-        color: red;
+        color: $marronClair;
     }
+}
+
+a.menu-item-*{
+    display: flex;
 }

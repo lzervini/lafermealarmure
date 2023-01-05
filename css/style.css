@@ -49,9 +49,14 @@ h3 {
 .menu__list {
   list-style: none;
   padding: 0;
+  color: #89513F;
 }
 .menu__list :visited {
-  color: red;
+  color: #89513F;
+}
+
+a.menu-item-* {
+  display: flex;
 }
 
 html {
@@ -60,4 +65,8 @@ html {
 
 body {
   background-color: #F2F3F2;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

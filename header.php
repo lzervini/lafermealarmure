@@ -30,14 +30,14 @@
   
 	<!-- Début du menu-->
 	<nav class="header__menu menu" id="mainNav" aria-label="Menu principal">
- <?php
-	  wp_nav_menu( array(
-     'theme_location' => 'main-menu',
-     'container'      => false,
-     'menu_class'     => 'menu__list',
-     'depth'          => 1
-   ) );
- ?>
+	<?php
+          wp_nav_menu(array(
+            'theme_location' => 'main-menu',
+            'container' => false,
+            'depth' => 1,
+            'menu_class' => 'menu__list',
+          ));
+        ?>
 	</nav>
 	<!-- Fin du menu-->
   

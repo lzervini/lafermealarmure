@@ -11,8 +11,6 @@
 	
 	// Intégration du fichier avec les fonctions de template.
 	require_once get_template_directory() . '/inc/template-functions.php';
-	
 
-	// Walker Nav Menu.
-	require_once get_template_directory() . '/classes/class-laferme-menu.php';
+
 	
