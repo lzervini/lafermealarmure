@@ -27,21 +27,33 @@ button:hover {
   background: #89513F;
 }
 
-.title {
+h1, h2, h3 {
   font-family: "Inter";
   font-weight: 400;
 }
-.title.-big {
+
+h1 {
   color: #89513F;
   font-size: 30px;
 }
-.title.-medium {
+
+h2 {
   color: #A68470;
   font-size: 24px;
 }
-.title.-tiny {
+
+h3 {
   color: #BD7441;
   font-size: 20px;
+}
+
+.bannerText {
+  font-family: "Sangira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 99px;
+  color: #F2F3F2;
 }
 
 * {
