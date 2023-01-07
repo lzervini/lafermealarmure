@@ -18,24 +18,30 @@ Version: 1.0
 @import "elements/contact-form";
 @import "elements/menu";
 
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 *{
   box-sizing: border-box;
 }
 
- html {
+html {
     font-family: $bodyFontfamily;
-  }
+}
   
 
-  body {
+body {
     background-color: $mainBackgroundColor;
-    margin: 0;
-
-  }
+    margin: 0px;
+}
   
   a{
     text-decoration: none;
   }
+
+main{
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
   
