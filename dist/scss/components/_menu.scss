@@ -1,0 +1,36 @@
+.header{
+    background-color: $mainBackgroundColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    min-height : 75px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__list{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    color: $marronClair;
+}
+
+
+.menu-item>a{
+    padding : 24px 12px 24px 12px;
+    &:hover{
+        background-color: $beige;
+        color : $mainBackgroundColor
+    }
+    &:visited{
+        color: $marronClair;
+        &:hover{
+            color: $mainBackgroundColor;
+        }
+    }
+    &:active{
+        background-color: $marronClair;
+        height: fit-content;
+    }
+}
+
