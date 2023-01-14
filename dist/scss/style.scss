@@ -16,7 +16,10 @@ Version: 1.0
 @import "elements/title";
 @import "elements/text";
 @import "elements/contact-form";
-@import "elements/menu";
+
+//Components
+@import "components/card";
+@import "components/menu";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
@@ -34,14 +37,29 @@ body {
     background-color: $mainBackgroundColor;
     margin: 0px;
 }
-  
+
+p{
+  color : $marronFonce;
+}
+
   a{
     text-decoration: none;
   }
 
-main{
-  margin: 0 auto;
-  max-width: 1000px;
+
+
+.wp-post-image{
+  width: 100%;
+  height: auto;
 }
 
-  
+.wp-block-media-text{
+  background: #F3E9E2;
+  border: 1px solid #BD7441;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.no-margin{
+  margin: 0;
+}
