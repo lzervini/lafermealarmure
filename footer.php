@@ -11,7 +11,7 @@ $logoFooter = get_field('logo_pied-de-page', 'infos');
 
 </main>
 
-		<footer class="grid -withoutMargin footer">
+		<footer class="flex -withoutMargin footer">
 
 	    <div class="footer__logo">
             <p class="footer_text"> La ferme à l’armure</p>
@@ -42,14 +42,8 @@ $logoFooter = get_field('logo_pied-de-page', 'infos');
 
 	    <div class="footer_reservation">
 	      <p">Nous vous attendons !</p>
+          
 	    </div>
-
-	    <div class="footer__gb">
-	      <svg width="200" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
-	        
-	      </svg>
-	    </div>
-
 	  </footer>
 
 	  <?php wp_footer(); ?>
