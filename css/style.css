@@ -7,8 +7,14 @@ Requires at least: WordPress 5.0
 Version: 1.0
 */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-button {
-  /* Auto layout */
+.wp-block-button > a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #A68470;
+  border-radius: 20px;
+}
+.wp-block-button > a:hover {
+  background: #89513F;
 }
 
 h1, h2, h3 {
@@ -46,17 +52,89 @@ h3 {
   width: 509px;
 }
 
-.menu__list {
-  list-style: none;
-  padding: 0;
-  color: #89513F;
+.card_middle {
+  box-sizing: border-box;
+  border: 1px solid #BD7441;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
+  max-width: 420px;
 }
-.menu__list :visited {
+
+.card_all {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-region {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.wp-block-media-text {
+  min-height: 400px;
+  max-width: 1000px;
+}
+
+.header {
+  background-color: #F2F3F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 75px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
   color: #89513F;
 }
 
-a.menu-item-* {
-  display: flex;
+.menu-item > a {
+  padding: 24px 12px 24px 12px;
+}
+.menu-item > a:hover {
+  background-color: #A68470;
+  color: #F2F3F2;
+}
+.menu-item > a:visited {
+  color: #89513F;
+}
+.menu-item > a:visited:hover {
+  color: #F2F3F2;
+}
+.menu-item > a:active {
+  background-color: #89513F;
+  height: fit-content;
+}
+
+.listUnstyled, .menu__list, .infos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__title {
+  margin-top: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -65,8 +143,29 @@ html {
 
 body {
   background-color: #F2F3F2;
+  margin: 0px;
+}
+
+p {
+  color: #2F211E;
 }
 
 a {
   text-decoration: none;
+}
+
+.wp-post-image {
+  width: 100%;
+  height: auto;
+}
+
+.wp-block-media-text {
+  background: #F3E9E2;
+  border: 1px solid #BD7441;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.no-margin {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

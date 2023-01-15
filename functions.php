@@ -12,5 +12,6 @@
 	// Intégration du fichier avec les fonctions de template.
 	require_once get_template_directory() . '/inc/template-functions.php';
 
-
-	
+		
+	// Plugin ACF
+	require_once get_template_directory() . '/inc/plugins/acf.php';

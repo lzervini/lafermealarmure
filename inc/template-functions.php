@@ -8,7 +8,10 @@
  
 
   function laferme_setup() {
-      // permet de rendre le code valide pour HTML5.
+    //image msie en avant
+    add_theme_support( 'post-thumbnails' );
+
+      // code valide pour HTML5.
   add_theme_support(
     'html5',
     array(
@@ -21,7 +24,7 @@
       'script',
     )
   );
-      // permet aux plugins et aux thèmes de gérer la balise de titre du document.
+      //Balise titre du document.
     add_theme_support( 'title-tag' );
       //permet la prise en charge d'un logo personnalisé.
     add_theme_support( 'custom-logo', array(
