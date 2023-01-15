@@ -1,7 +1,57 @@
+<?php
+
+$adresse    = get_field('adresse', 'infos');
+$adressezip = get_field('adresse_zipcode', 'infos');
+$tel        = get_field('tel', 'infos');
+$mail       = get_field('Email', 'infos');
+$logoFooter = get_field('logo_pied-de-page', 'infos');
+
+
+?>
+
 </main>
-<footer>Le pied de page de mon site</footer>
 
-<?php wp_footer(); ?>
+		<footer class="grid -withoutMargin footer">
 
-</body>
+	    <div class="footer__logo">
+            <p class="footer_text"> La ferme à l’armure</p>
+            <img src="<?php echo $logoFooter['url']; ?>" class="style-svg"/>
+            </img>  
+	    </div>
+
+	    <nav class="footer__menu">
+	      <h3 class="footer__title">Navigation</h3>
+	      <ul class="listUnstyled">
+	        <li><a href="#">Accueil</a></li>
+	        <li><a href="#">Les chambres</a></li>
+	        <li><a href="#">Restauration</a></li>
+	        <li><a href="#">La région</a></li>
+	        <li><a href="#">Contact & accès</a></li>
+	      </ul>
+	    </nav>
+
+	    <div class="footer__contact">
+	      <h3 class="footer__title">Coordonnées</h3>
+	      <address class="footer__address">
+	        <?php echo $adresse; ?><br>
+	        <?php echo $adressezip; ?><br>
+            <a href="tel:<?php echo $tel; ?>"><?php echo $tel; ?></a>
+        <br><a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a>
+	      </address>
+	    </div>
+
+	    <div class="footer_reservation">
+	      <p">Nous vous attendons !</p>
+	    </div>
+
+	    <div class="footer__gb">
+	      <svg width="200" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
+	        
+	      </svg>
+	    </div>
+
+	  </footer>
+
+	  <?php wp_footer(); ?>
+  </body>
 </html>
