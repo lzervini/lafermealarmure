@@ -1,10 +1,9 @@
 .card_middle{
     box-sizing: border-box;
-    border: 1px solid #BD7441;
+    border: 1px solid $orange;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
     max-width: 420px;
-    
 }
 
 .card_all{
@@ -26,6 +25,7 @@
     align-items : center;
     gap: 70px;
 }
+
 
 .wp-block-media-text{
     min-height: 400px;

@@ -3,3 +3,21 @@
     height: 56px;
     width : 509px;
 }
+
+.wpcf7-submit{
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: $beige;
+    border-radius: 20px;
+    &:hover{
+        background: $marronClair;
+    }
+}
+
+.has-spinner {
+    width: 200px;
+    border-radius: 20px;
+    color: white;
+    height: 42px;
+   }
+   
