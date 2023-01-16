@@ -18,4 +18,5 @@ if( function_exists('acf_add_options_page') ) {
 		'autoload' => false,
 		'update_button' => 'Mettre à jour',
 	]);
+
 }

@@ -6,19 +6,56 @@
 
   .footer {
     background-color: white;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .footer a {
     text-decoration: none;
+    color: $marronFonce;
+    &:hover{
+      text-decoration: underline ;
+      color : $beige;
+    }
+  }
+
+  #menu-footer>.menu-item>a,
+  .footer__contact>address{
+    line-height: 1.5rem;
   }
 
   .footer__title {
     margin-top: 0;
+    margin-bottom: 15px;
   }
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+.footer__address {
+  font-style: inherit;
+ }
+ 
+ footer> hr{
+    color : $orange;
+ }
+
+ .footer_droit{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+ }
+
+ .footer_droit > a {
+    color : $marronClair;
+    font-size: 13px;
+ }
+
+ a.glink img {
+  width: 22px;
+  border-radius: 5px;
+ }
+ 

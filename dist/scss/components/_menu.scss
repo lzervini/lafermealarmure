@@ -1,3 +1,4 @@
+// Header
 .header{
     background-color: $mainBackgroundColor;
     display: flex;
@@ -16,7 +17,7 @@
 }
 
 
-.menu-item>a{
+#menu-principal>.menu-item>a{
     padding : 24px 12px 24px 12px;
     &:hover{
         background-color: $beige;
