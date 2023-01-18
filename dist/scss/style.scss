@@ -31,12 +31,24 @@ Version: 1.0
 
 html {
     font-family: $bodyFontfamily;
+    
 }
   
 
+
 body {
-    background-color: $mainBackgroundColor;
-    margin: 0px;
+    background-color: $secondaryBackgroundColor;
+    margin: 0;
+    line-height: 20px;
+}
+
+.body-centered{
+  width:60%;
+  margin: auto;
+}
+
+main{
+  margin: 75px 0;
 }
 
 p{
