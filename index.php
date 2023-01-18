@@ -13,10 +13,10 @@
 		while ( have_posts() ) : the_post();?>
 
 			
-			<div class="card-region">
+			 <div class="body-centered"> 
 
 				<?php the_content();?>
-			</div>
+			<!-- </div> -->
 			<?php get_template_part('template-parts','services');
 
 		endwhile;
