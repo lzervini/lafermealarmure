@@ -3,8 +3,9 @@
 <?php
  	if ( have_posts() ) :
  		while ( have_posts() ) : 
-			the_post();
-			the_content('');
+			the_post();?>
+			<div class="body-centered"> 
+			<?php the_content('');
 			echo do_shortcode( '[trustindex no-registration=google]' ); 
 			get_template_part('template-parts/services.php', 'services');
 		endwhile;
