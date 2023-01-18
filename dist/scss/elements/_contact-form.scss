@@ -1,7 +1,12 @@
 .wpcf7-form-control{
     border-radius: 10px;
     height: 56px;
-    width : 509px;
+    width : 80%;
+}
+
+
+.wpcf7-form-control-wrap>textarea{
+    height: 50%;
 }
 
 .wpcf7-submit{
