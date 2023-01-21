@@ -45,6 +45,6 @@
 
 		</header>
 		<?php
-		 the_post_thumbnail( the_title( '<h1>', '</h1>' ) );
+		 
 		 ?>
 		<main>

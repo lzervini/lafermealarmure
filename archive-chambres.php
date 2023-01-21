@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<div class="wp-block-cover">
+	<span class="wp-block-cover__background has-white-background-color has-background-dim-20 has-background-dim"></span>
+	<img class ="wp-block-cover__image-background wp-post-image" src="https://localhost/lafermealarmure/wp-content/uploads/2023/01/pexels-cottonbro-studio-4108807-1-1024x246.png" alt="" sizes="(max-width: 1500px) 100vw, 1500px">
+	<div class="wp-block-cover__inner-container">
+<p class="has-text-align-center bannerText has-text-color" style="">Les chambres</p>
+</div>
+</div>
 <div class="card_all">
 
 <?php
