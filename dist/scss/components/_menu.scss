@@ -19,6 +19,7 @@
 
 #menu-principal>.menu-item>a{
     padding : 24px 12px 24px 12px;
+    color: $marronClair;
     &:hover{
         background-color: $beige;
         color : $mainBackgroundColor

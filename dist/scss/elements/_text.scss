@@ -2,7 +2,13 @@
     font-family: 'Sangira';
     font-style: normal;
     font-weight: 400;
-    font-size: 72px;
-    line-height: 99px;
-    color: $mainBackgroundColor;
+    font-size: 60px;
+    line-height: 95px;
+    margin: 0;
+}
+
+.bannerTextTitle{
+    font-family: $bannerFontFamily;
+    color: $marronFonce;
+    margin: 0;
 }
