@@ -15,7 +15,7 @@
 	// Plugin ACF
 	require_once get_template_directory() . '/inc/plugins/acf.php';
 
-	//Intégration de la première image d'un article dans les archives 
+	//Intégration de la éème image d'un article dans les archives 
 	 function catch_that_image() {
 		global $post, $posts;
 		$first_img = '';

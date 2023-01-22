@@ -57,8 +57,12 @@
 
    }
 
-p.has-white-background-color:nth-child(2) {
+p.whiteBand:nth-child(2) {
     margin: 0;
     padding: 2rem 20rem;
    }
    
+.whiteBand{
+    background-color: white;
+    padding: 2rem 20rem;
+}
