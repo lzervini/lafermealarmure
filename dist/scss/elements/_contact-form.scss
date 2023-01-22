@@ -1,21 +1,47 @@
 .wpcf7-form-control{
+    border : none;
     border-radius: 10px;
     height: 56px;
     width : 80%;
+    border: solid black 1px;
+    &:active{
+        border: none;
+        border: solid $marronFonce 2px;
+    }
+    &:focus{
+        border: none;
+        border : solid $marronFonce 2px;
+    }
+    &:focus-visible{
+        border: none;
+        border : ridge green 2px;
+    }
+
+}
+
+.wpcf7-text{
+    padding : 0 10px;
 }
 
 
 .wpcf7-form-control-wrap>textarea{
     height: 50%;
+    padding: 10px 10px;
+}
+
+.textarea{
+    font-family: $bodyFontfamily;
 }
 
 .wpcf7-submit{
     font-size: 1rem;
     padding: 10px 20px;
     background-color: $beige;
+    border: none;
     border-radius: 20px;
     &:hover{
         background: $marronClair;
+        cursor: pointer;
     }
 }
 
@@ -24,5 +50,15 @@
     border-radius: 20px;
     color: white;
     height: 42px;
+   }
+   
+#wpcf7-f5-p21-o1{
+    text-align: center;
+
+   }
+
+p.has-white-background-color:nth-child(2) {
+    margin: 0;
+    padding: 2rem 20rem;
    }
    
