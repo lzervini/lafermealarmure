@@ -4,12 +4,9 @@
  		while ( have_posts() ) : 
 			the_post();?>
 			<?php the_content('');
-			echo do_shortcode( '[trustindex no-registration=google]' ); 
-			get_template_part('template-parts/services.php', 'services');
-		endwhile;
-	else :
-			get_template_part( 'template-parts/content', 'none' );
-
+			echo do_shortcode( '[trustindex no-registration=google]' ); ?>
+			<?php get_template_part('template-parts/services');?>
+		<?php endwhile;
  	endif;
 
  ?>
