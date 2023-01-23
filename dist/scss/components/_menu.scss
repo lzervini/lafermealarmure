@@ -39,5 +39,37 @@
 //Menu déroulant
 .sub-menu {
     position: absolute;
+    background: #F2F3F2;
+    list-style: none;
+    top: 65px;
+    padding : 0;
    }
+   
+   .wp-block-cover {
+    z-index: -2;
+   }
+
+.sub-menu > li {
+    list-style: none;
+    padding:15px;
+    &:hover{
+        background-color: $beige;
+        color : $mainBackgroundColor
+    }
+}
+
+.sub-menu > li >a {
+    color: $marronClair;
+
+    &:visited{
+        color: $marronClair;
+        &:hover{
+            color: $mainBackgroundColor;
+        }
+    }
+    &:active{
+        background-color: $marronClair;
+        height: fit-content;
+    }
+}
    
