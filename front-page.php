@@ -5,6 +5,8 @@
 			the_post();?>
 			<?php the_content('');
 			echo do_shortcode( '[trustindex no-registration=google]' ); ?>
+			<br>
+			<hr>
 			<?php get_template_part('template-parts/services');?>
 		<?php endwhile;
  	endif;

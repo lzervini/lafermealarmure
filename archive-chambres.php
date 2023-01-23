@@ -27,5 +27,12 @@
 	endif;
  ?>
 </div>
+<br>
+<br>
+<hr class="littleLine">
+<div class="body-centered">
+	<?php get_template_part('template-parts/services');?>
+</div>
+
 
 <?php get_footer(); ?>
