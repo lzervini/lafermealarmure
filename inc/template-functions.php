@@ -5,6 +5,9 @@
     array(),
     '1.0' 
   );
+
+  wp_enqueue_script(
+     'lafermealarmure-scripts', get_template_directory_uri() . '../dist/js/scripts.js', array(), '', true );
  
 
   function laferme_setup() {
