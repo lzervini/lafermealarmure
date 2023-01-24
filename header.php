@@ -27,7 +27,10 @@
 	      <?php endif; ?>
 	</div>
 	<div class="header__end">
-  
+	<button class="header__menuBtn menuBurger" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menuBurger__bar" aria-hidden="true"></span>
+	</button>
+	</div>
 	<!-- Début du menu-->
 	<nav class="header__menu menu" id="mainNav" aria-label="Menu principal">
 	<?php
