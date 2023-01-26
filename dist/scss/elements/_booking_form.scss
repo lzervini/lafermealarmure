@@ -1,0 +1,97 @@
+.wpbs-form-field-input>input{
+    border:none !important;
+    border-radius: 12px !important;
+    border: solid black 1px !important;
+    height : 30px;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding : 13px;
+    &:active{
+        border: none;
+        border: solid $marronFonce 2px!important;
+    }
+    &:focus{
+        border: none;
+        border : solid $marronFonce 2px!important;
+    }
+    &:focus-visible{
+        border: none;
+        border : solid $marronFonce 2px!important;
+    }
+}
+
+.wpbs-form-field-input>label, .wpbs-form-field-label, .wpbs-total-price{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iti iti--allow-dropdown iti--separate-dial-code>input{
+    border:none !important;
+    border-radius: 12px !important;
+    border: solid black 1px !important;
+    height : 30px;
+    width: 80%;
+}
+
+.wpbs-form-field-input>textarea{
+    border:none !important;
+    border-radius: 12px !important;
+    border: solid $marronFonce 1px !important;
+    height : 30px;
+    width: 80%;
+    font-family: $secondaryBackgroundColor;
+    padding : 10px 10px;
+    height : 55%;
+    font-family: Arial;
+}
+
+.wpbs-legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+.wpbs-legend-item{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#wpbs-form-submit-3, #wpbs-form-submit-2{
+    border: none!important;
+    cursor: pointer;
+   }
+
+   
+   .wpbs-main-wrapper {
+    display: flex!important;
+   align-items: center!important;
+   flex-wrap : wrap;
+   }
+
+   
+   
+#wpbs-form-3, #wpbs-form-2{
+background: #F9F4F2E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+padding: 29px 20px 2px!important;
+}
+
+.wpbs-total-price {
+    background: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+   }
+   
+   .wpbs-pricing-table > thead:nth-child(1) > tr:nth-child(1) > th:nth-child(1) {
+    text-align: start;
+   }
+
+
+.wpbs-container{
+
+    display: flex!important;
+    justify-content: center!important; 
+}

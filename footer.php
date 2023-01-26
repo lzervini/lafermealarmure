@@ -10,6 +10,7 @@ $rgpd 	= get_field('rgpd', 'infos');
 $mentions 	= get_field('mentions_legales', 'infos');
 $accessibilite 	= get_field('accessibilite', 'infos');
 $plan	= get_field('plan_du_site', 'infos');
+$lienFooter = get_field('bouton_footer', 'infos');
 
 ?>
 
@@ -45,7 +46,12 @@ $plan	= get_field('plan_du_site', 'infos');
 		
 				<div class="footer_reservation">
 				  <p">Nous vous attendons !</p>
-				  
+				  <div class="wp-block-button main-button">
+					  <a class=" wp-block-button__link" href="<?php echo $lienFooter;?>" style="color:white">
+						  Voir les chambres
+				  </a>
+
+				  </div>
 				</div>
 			</div>
 		<hr>
@@ -55,7 +61,7 @@ $plan	= get_field('plan_du_site', 'infos');
 			<a href="<?php echo $mentions; ?>">Mentions Légales</a>
 			<span>-</span>
 			<a href="<?php echo $accessibilite; ?>">Accessibilité</a>
-			<span>-</span>
+			<span class="footerNone">-</span>
 			<a href="<?php echo $plan; ?>">Plan du site</a>
 		</div>
 	  </footer>

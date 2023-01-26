@@ -10,12 +10,14 @@ Version: 1.0
 //Foundation
 @import "foundations/variables";
 @import "foundations/mixins";
+@import "foundations/_mediaQueries";
 
 //Elements
 @import "elements/button";
 @import "elements/title";
 @import "elements/text";
 @import "elements/contact-form";
+@import "elements/_booking_form";
 @import "elements/services";
 
 //Components
@@ -47,6 +49,10 @@ body {
   margin: 40px auto;
 }
 
+.bigMargin{
+  margin-top: 60px!important;
+}
+
 main{
   margin: 0 0 75px 0;
 }
@@ -59,7 +65,9 @@ p{
     text-decoration: none;
   }
 
-
+.bgWhite{
+  background: white;
+}
 
 .wp-post-image{
   width: 100%;

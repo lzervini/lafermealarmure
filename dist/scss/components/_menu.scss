@@ -1,6 +1,6 @@
 // Header
 .header{
-    background-color: $mainBackgroundColor;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,6 @@
     list-style: none;
     color: $marronClair;
 }
-
 
 #menu-principal>.menu-item>a{
     padding : 24px 12px 24px 12px;
@@ -45,10 +44,10 @@
 //Menu déroulant
 .sub-menu {
     position: absolute;
-    background: #F2F3F2;
+    background: white;
     list-style: none;
     top: 65px;
-    padding : 0;
+    padding : 0 ;
    }
    
    .wp-block-cover {
@@ -80,4 +79,129 @@
 }
    
 
-//test
+//Menu burger
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    z-index: 10;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0 24px;
+    transition: all .4s ease;
+  }
+  
+  .header.headroom--not-top {
+    background-color: white;
+  }
+
+  .header__start {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__end {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header__logo {
+    position: relative;
+  }
+  
+  .header__logo .style-svg {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu.-open {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .menu__list {
+    margin-top: 25vh;
+    margin-left: 10vw;
+  }
+
+    
+  .menu-item {
+    position: relative;
+  }
+
+  #mainNav
+  {
+    justify-content: center;
+    text-align:center;
+  }
+
+  //Menu burger
+  .menuBurger {
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menuBurger.-open .menuBurger__bar, .menuBurger.-open .menuBurger__bar::before,
+  .menuBurger.-open .menuBurger__bar::after {
+    transform: rotate(135deg);
+    background: $orange;
+  }
+  
+  .menuBurger.-open .menuBurger__bar::before,
+  .menuBurger.-open .menuBurger__bar::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  .menu.-open{
+    height: 50%;
+  }
+
+  .menuBurger__bar:before {
+    top: -10px;
+  }
+  
+  .menuBurger__bar:after {
+    top: 10px;
+  }
+  
+  
+  .menuBurger__bar, .menuBurger__bar::before,
+  .menuBurger__bar::after {
+    content: '';
+    background: $marronClair;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    border-radius: 3px;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+  }
+  
+  .wp-block-cover > img{
+    height: 90%!important;
+  }
+
+  .wp-block-cover__background{
+    height : 90%!important;
+  }
+
