@@ -1,13 +1,13 @@
 <?php
 	wp_enqueue_style( 
     'lafermealarmure-style',
-     get_template_directory_uri() . '../css/style.css',
+     get_template_directory_uri() . '/css/style.css',
     array(),
     '1.0' 
   );
 
   wp_enqueue_script(
-     'lafermealarmure-scripts', get_template_directory_uri() . '../dist/js/scripts.js', array(), '', true );
+     'lafermealarmure-scripts', get_template_directory_uri() . '/dist/js/scripts.js', array(), '', true );
  
 
   function laferme_setup() {
